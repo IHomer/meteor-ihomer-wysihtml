@@ -1,9 +1,9 @@
 {
-    "name": "bootstrap3-wysihtml5",
+    "name": "meteor-ihomer-wysihtml",
     "description": "bootstrap3 wysiwyg HTML5 editor for meteor",
-    "homepage": "https://github.com/andreioprisan/meteor-bootstrap3-wysihtml5",
-    "author": "Andrei Oprisan (http://oprisan.com)",
-    "version": "0.3.4",
-    "git": "https://github.com/andreioprisan/meteor-bootstrap3-wysihtml5.git",
+    "homepage": "https://github.com/IHomer/meteor-ihomer-wysihtml.git",
+    "author": "Wim Pool",
+    "version": "1.0.0",
+    "git": "https://github.com/IHomer/meteor-ihomer-wysihtml.git",
     "packages":{}
 }

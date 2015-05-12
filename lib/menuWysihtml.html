@@ -1,0 +1,98 @@
+<template name="menuWysihtml">
+    <div id="{{id}}">
+        <ul class="wysihtml5-toolbar">
+            <li class="dropdown"><a class="btn dropdown-toggle btn-sm btn-default" data-toggle="dropdown" href="#"><i
+                    class="glyphicon glyphicon-font"></i>&nbsp;<span class="current-font">Normal text</span>&nbsp;<b
+                    class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="div" tabindex="-1"
+                           href="javascript:;" unselectable="on">Normal</a></li>
+                    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" tabindex="-1"
+                           href="javascript:;" unselectable="on">Heading 1</a></li>
+                    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" tabindex="-1"
+                           href="javascript:;" unselectable="on">Heading 2</a></li>
+                    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h3" tabindex="-1"
+                           href="javascript:;" unselectable="on">Heading 3</a></li>
+                    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h4" href="javascript:;"
+                           unselectable="on">Heading 4</a></li>
+                    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h5" href="javascript:;"
+                           unselectable="on">Heading 5</a></li>
+                    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h6" href="javascript:;"
+                           unselectable="on">Heading 6</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="btn-group">
+                    <a class="btn btn-sm btn-default" data-wysihtml5-command="fontSizeStyle" data-wysihtml5-command-value="11pt" title="FontSize 11pt "
+                       tabindex="-1" href="javascript:;" unselectable="on">11pt</a>
+                </div>
+            </li>
+            <li>
+                <div class="btn-group">
+                    <a class="btn btn-sm btn-default" data-wysihtml5-command="bold" title="Bold (CTRL+B)"
+                                          tabindex="-1" href="javascript:;" unselectable="on">B</a>
+                    <a class="btn btn- btn-sm btn-default" data-wysihtml5-command="italic" title="Italic (CTRL+I)" tabindex="-1"
+                        href="javascript:;" unselectable="on">I</a>
+                    <a class="btn btn- btn-sm btn-default" data-wysihtml5-command="underline" title="Underline (CTRL+U)" tabindex="-1" href="javascript:;"
+                                                                           unselectable="on">U</a>
+                </div>
+            </li>
+            <li>
+                <div class="btn-group"><a class="btn btn-sm btn-default" data-wysihtml5-command="insertUnorderedList"
+                                          title="Unordered list" tabindex="-1" href="javascript:;" unselectable="on"><i
+                        class="glyphicon glyphicon-list"></i></a><a class="btn btn- btn-sm btn-default"
+                                                                    data-wysihtml5-command="insertOrderedList"
+                                                                    title="Ordered list" tabindex="-1" href="javascript:;"
+                                                                    unselectable="on"><i
+                        class="glyphicon glyphicon-th-list"></i></a><a class="btn btn- btn-sm btn-default"
+                                                                       data-wysihtml5-command="Outdent" title="Outdent"
+                                                                       tabindex="-1" href="javascript:;"
+                                                                       unselectable="on"><i
+                        class="glyphicon glyphicon-indent-right"></i></a><a class="btn btn- btn-sm btn-default"
+                                                                            data-wysihtml5-command="Indent" title="Indent"
+                                                                            tabindex="-1" href="javascript:;"
+                                                                            unselectable="on"><i
+                        class="glyphicon glyphicon-indent-left"></i></a></div>
+            </li>
+            <li class='dropdown'>
+                <a class='btn dropdown-toggle btn-sm btn-default' data-toggle='dropdown' href='#' tabindex='-1' data-behavior="foreColorStyle" >
+                    <span class='current-color'>Color</span>&nbsp;<b class='caret'></b>
+                </a>
+                <ul class='dropdown-menu' data-wysihtml5-command-group="foreColorStyle">
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: black" data-wysihtml5-command-value='rgb(0, 0, 0)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(0, 0, 0)'>black</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: silver" data-wysihtml5-command-value='rgb(192, 192, 192)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(192, 192, 192)'>silver</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: grey" data-wysihtml5-command-value='rgb(128, 128, 128)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(128, 128, 128)'>gray</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: maroon" data-wysihtml5-command-value='rgb(128, 0, 0)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='maroon'>maroon</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: red" data-wysihtml5-command-value='rgb(255, 0, 0)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(255, 0, 0)'>red</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: purple" data-wysihtml5-command-value='rgb(128, 0, 128)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(128, 0, 128)'>purple</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: green" data-wysihtml5-command-value='rgb(0, 128, 0)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(0, 128, 0)'>green</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: olive" data-wysihtml5-command-value='rgb(128, 128, 0)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(128, 128, 0)'>olive</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: navy" data-wysihtml5-command-value='rgb(0, 0, 128)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(0, 0, 128)'>navy</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: blue" data-wysihtml5-command-value='rgb(0, 0, 255)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(0, 0, 255)'>blue</a></li>
+                    <li><div class='wysihtml5-colors' data-wysihtml5-command='foreColorStyle' style="background-color: orange" data-wysihtml5-command-value='rgb(255, 165, 0)'></div>
+                        <a class='wysihtml5-colors-title' data-wysihtml5-command='foreColorStyle' data-wysihtml5-command-value='rgb(255, 165, 0)'>orange</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="btn btn- btn-sm btn-default" data-wysihtml5-command="createLink" title="Insert link" tabindex="-1"
+                   href="javascript:;" unselectable="on"><i class="glyphicon glyphicon-share"></i></a></li>
+        </ul>
+        <div data-wysihtml5-dialog="createLink" style="display: none;">
+            <label>
+                Link:
+                <input data-wysihtml5-dialog-field="href" value="http://">
+            </label>
+            <a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+        </div>
+    </div>
+</template>
