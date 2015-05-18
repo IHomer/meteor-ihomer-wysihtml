@@ -2,7 +2,7 @@
     <div id="{{id}}">
         <ul class="wysihtml5-toolbar">
             <li class="dropdown"><a class="btn dropdown-toggle btn-sm btn-default" data-toggle="dropdown" href="#"><i
-                    class="glyphicon glyphicon-font"></i>&nbsp;<span class="current-font">Normal text</span>&nbsp;<b
+                    class="glyphicon glyphicon-font"></i>&nbsp;<span class="current-font">Normal</span>&nbsp;<b
                     class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="div" tabindex="-1"
@@ -86,11 +86,21 @@
             <li>
                 <a class="btn btn- btn-sm btn-default" data-wysihtml5-command="createLink" title="Insert link" tabindex="-1"
                    href="javascript:;" unselectable="on"><i class="glyphicon glyphicon-share"></i></a></li>
+            <li>
+                <a class="btn btn- btn-sm btn-default" data-wysihtml5-command="insertImage" title="Insert Image" tabindex="-1"
+                   href="javascript:;" unselectable="on"><i class="glyphicon glyphicon-picture"></i></a></li>
         </ul>
         <div data-wysihtml5-dialog="createLink" style="display: none;">
             <label>
                 Link:
                 <input data-wysihtml5-dialog-field="href" value="http://">
+            </label>
+            <a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+        </div>
+        <div data-wysihtml5-dialog="insertImage" style="display: none;">
+            <label>
+                Image:
+                <input data-wysihtml5-dialog-field="src" value="http://">
             </label>
             <a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
         </div>
